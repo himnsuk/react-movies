@@ -6,6 +6,7 @@ import Product from "./components/products";
 import Posts from "./components/posts";
 import Dashboard from "./components/dashboard";
 import Navbar from "./components/common/navbar";
+import Login from "./components/login";
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <Navbar />
         <div className="content">
           <Switch>
+            <Route path="/login" component={Login} />
             <Route path="/product" component={Product} />
             <Route path="/posts" component={Posts} />
             <Route path="/admin" component={Dashboard} />
